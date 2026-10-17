@@ -16,6 +16,7 @@ Before UIUC I worked in AI engineering at StitchStudio and in software engineeri
 ## What I work on
 
 - **GPU inference.** Custom CUDA kernels for transformer forward passes, including memory pipelines and KV-cache decode.
+- **Speculative agent inference.** A small model decides when a long tool-use trace is ready to hand off, then another small model emits the call.
 - **Retrieval.** Embedding indexes tuned on recall, latency, and memory, not on a single quality number.
 - **Data systems.** Approximate nearest-neighbor search, distributed storage, and contention under skewed OLTP load.
 
@@ -26,6 +27,7 @@ Coursework at UIUC includes Applied Parallel Programming, Systems for GenAI, App
 | Repository | What it is | Stack |
 | --- | --- | --- |
 | [THINKER-GPT2-Inference](https://github.com/adityaCS-UIUC/THINKER-GPT2-Inference) | CUDA forward pass for GPT-2 124M: tiled GEMM, Tensor Cores, cuBLAS, Flash Attention, KV-cache decode, and `cp.async` pipelines. ECE 408 portfolio build, based on [llm.c](https://github.com/karpathy/llm.c). | CUDA |
+| [PACT](https://github.com/adityaCS-UIUC/PACT) | Speculative early exit for tool-use agents. A Phi-3 speculator truncates a QwQ-32B reasoning trace at threshold τ, and a second Phi-3 model turns that prefix into the next tool call. CS 598. | Python, PyTorch, LoRA |
 | [DenseRetrievalSystem_Contriever](https://github.com/adityaCS-UIUC/DenseRetrievalSystem_Contriever) | Dense retrieval with Contriever and FAISS. Index choices are driven by Recall@k, p50/p95 latency, throughput, and memory, including sub-300ms p95 retrieval on the evaluated sets. | Python, PyTorch, FAISS |
 | [LegendSpot-LegendDB-Primary](https://github.com/adityaCS-UIUC/LegendSpot-LegendDB-Primary) | Research simulation of HotSpot-LegendDB: an LSM-augmented, multi-primary RDMA OLTP design for hot-spot contention. Companion to a CS 511 proposal on write buffering and ownership consolidation. | Python |
 | [CS511-MP2-HNSW-DiskANN](https://github.com/adityaCS-UIUC/CS511-MP2-HNSW-DiskANN) | HNSW and DiskANN approximate nearest-neighbor search. Construction and search grids target Recall@1 of 0.95, with combined latency curves. | Python |
@@ -37,6 +39,8 @@ Coursework at UIUC includes Applied Parallel Programming, Systems for GenAI, App
 
 The GPT-2 repository packages an ECE 408 team project for public review. Kernel work was collaborative. My focus on that project was KV-cache attention, `cp.async` GEMM, profiling, LayerNorm and softmax, and the verification harness.
 
+PACT is a CS 598 team project with Smit Vasani and Ram. The public repository is the local project tree.
+
 ## Stack
 
-CUDA, C++, Python, PyTorch, FAISS, Spark, HDFS, React, TypeScript.
+CUDA, C++, Python, PyTorch, LoRA, FAISS, Spark, HDFS, React, TypeScript.
