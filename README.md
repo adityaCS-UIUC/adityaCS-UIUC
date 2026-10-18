@@ -64,7 +64,7 @@ Coursework at UIUC includes Applied Parallel Programming, Systems for GenAI, App
 
 The GPT-2 repository packages an ECE 408 team project for public review. Kernel work was collaborative. My focus on that project was KV-cache attention, `cp.async` GEMM, profiling, LayerNorm and softmax, and the verification harness.
 
-PACT is a CS 598 team project with Smit Vasani and Ram. The public repository is the local project tree.
+PACT is a CS 598 team project. The public repository is the local project tree.
 
 ## Stack
 
