@@ -1,17 +1,34 @@
 <h1 align="center">Aditya Prasath Ravilla</h1>
 <p align="center">
   <strong>I build the systems underneath machine learning.</strong><br>
-  M.S. Computer Science, University of Illinois Urbana-Champaign
+  M.S. Computer Science, University of Illinois Urbana-Champaign · Expected May 2027
 </p>
 <p align="center">
   <a href="https://www.linkedin.com/in/adityaprasath">LinkedIn</a>
   &nbsp;·&nbsp;
+  <a href="mailto:apr11@illinois.edu">apr11@illinois.edu</a>
+  &nbsp;·&nbsp;
   <a href="https://github.com/adityaCS-UIUC">GitHub</a>
 </p>
 
-I am a computer science master's student at the Siebel School of Computing and Data Science. My work sits on the path from a model to a system that is fast, measurable, and correct: GPU kernels, retrieval indexes, and data infrastructure.
+I am a computer science master's student at the Siebel School of Computing and Data Science. My work sits on the path from a model to a system that is fast, measurable, and correct: GPU kernels, speculative tool-use inference, retrieval indexes, and data infrastructure.
 
 Before UIUC I worked in AI engineering at StitchStudio and in software engineering at Cognizant, including production 5G microservices and real-time pipelines for Verizon. I am looking for software engineering and ML systems roles.
+
+<p align="center">
+  <img src="output/bonsai.gif" width="320" alt="Bonsai grown from the public history of adityaCS-UIUC" />
+</p>
+<p align="center">
+  <sub>
+    One account, one tree. Grown from this history by
+    <a href="https://www.egorthinks.com/bonsai/?u=adityaCS-UIUC">git-bonsai</a>.
+    <a href="output/bonsai-growth.gif">Replay the growth</a>.
+  </sub>
+</p>
+
+<p align="center">
+  <img src="https://gitcard-studio.creativecode.com.co/api/languages?username=adityaCS-UIUC&theme=tokyonight&locale=en" alt="Language mix on this GitHub account: Python, CUDA, Jupyter, TypeScript" />
+</p>
 
 ## What I work on
 
@@ -22,7 +39,15 @@ Before UIUC I worked in AI engineering at StitchStudio and in software engineeri
 
 Coursework at UIUC includes Applied Parallel Programming, Systems for GenAI, Applied Machine Learning, Cloud Computing Applications, Database Systems, and Advanced Data Management.
 
-## Repositories
+## Open these first
+
+| Project | Why it is here |
+| --- | --- |
+| [THINKER-GPT2-Inference](https://github.com/adityaCS-UIUC/THINKER-GPT2-Inference) | CUDA forward pass for GPT-2 124M: tiled GEMM, Tensor Cores, cuBLAS, Flash Attention, KV-cache decode, and `cp.async` pipelines. |
+| [PACT](https://github.com/adityaCS-UIUC/PACT) | Speculative early exit for tool-use agents. A Phi-3 speculator truncates a QwQ-32B trace, and a second Phi-3 model emits the tool call. |
+| [DenseRetrievalSystem_Contriever](https://github.com/adityaCS-UIUC/DenseRetrievalSystem_Contriever) | Contriever and FAISS, tuned on Recall@k, p50/p95 latency, throughput, and memory. |
+
+## All repositories
 
 | Repository | What it is | Stack |
 | --- | --- | --- |
