@@ -100,5 +100,3 @@ PACT is a CS 598 team project. The public repository is the local project tree.
 **Systems.** Linux, Docker, Kubernetes, AWS, Kafka, PostgreSQL, Redis, gRPC, Spark, HDFS
 
 **Interfaces.** React, Next.js, FastAPI, WebSockets
-
-Icons from [Simple Icons](https://github.com/simple-icons/simple-icons).
